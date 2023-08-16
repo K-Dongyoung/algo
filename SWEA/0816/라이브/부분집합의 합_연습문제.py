@@ -1,5 +1,5 @@
-def f(i, N, s, t): # s : i-1 원소까지 부분집합의 합(포함된 원소의 합)
-    global cnt      # t: 찾으려는 합
+def f(i, N, s, t): # s : i-1 원소까지 부분집합의 합(포함된 원소의 합), t: 찾으려는 합
+    global cnt
     cnt += 1
     if s == t:
         print(bit)
