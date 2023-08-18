@@ -1,4 +1,4 @@
-import sys
+import sys  #겨수님 코드 보기 간단함
 sys.stdin = open('code.txt')
 
 T = 10
