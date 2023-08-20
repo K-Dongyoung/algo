@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('street.txt')
+sys.stdin = open('dist.txt')
 
 from collections import deque
 

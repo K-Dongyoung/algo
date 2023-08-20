@@ -1,2 +1,1 @@
-a = '123'
-print(a.isdigit())
+print((3,1) > (0,100))
