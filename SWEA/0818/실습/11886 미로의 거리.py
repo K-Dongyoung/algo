@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('street_maze.txt')
+sys.stdin = open('dist_maze.txt')
 
 from collections import deque
 
