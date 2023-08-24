@@ -32,7 +32,11 @@ def convert(L):
         result.append(''.join(temp))
     return result
 
+def find_end_code(string):
+    return
+
 def find_magnification(string):
+
     pass
 
 def division():
