@@ -8,6 +8,11 @@ binary = {
     'C':'1100', 'D':'1101', 'E':'1110', 'F':'1111',
 }
 
+code = {
+    '221':0, '221':1, '122':2, '411':3, '132':4,
+    '231':5, '114':6, '312':7, '213':8, '112':9,
+}
+
 def get(L):
     result = []
     temp = set()
@@ -27,7 +32,14 @@ def convert(L):
         result.append(''.join(temp))
     return result
 
+def find_magnification(string):
+    pass
 
+def division():
+    pass
+
+def decode(string):
+    pass
 
 
 T = int(input())
