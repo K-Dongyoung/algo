@@ -1,2 +1,4 @@
-for j in range(0, 56, 7):
-    print(j)
+a = [0] * 11
+for i in range(2, len(a), 2):
+    a[i] += 3
+print(a)
