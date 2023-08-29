@@ -17,11 +17,10 @@ def get(L):
     result = []
     temp = set()
     for i in range(N):
-        temp.add('0' + L[i].strip('0') + '0')
-    temp.remove('00')
+        temp.add(L[i])
+    temp.remove(L[0])
     for i in range(len(temp)):
         result.append(temp.pop().replace('0000000','0'))
-
     return result
 
 def convert(L):
@@ -30,7 +29,7 @@ def convert(L):
         temp = []
         for c in string:
             temp.append(binary[c])
-        result.append((''.join(temp)).rstrip('0').replace('0000000000000000','0'))
+        result.append(''.join(temp).replace('0000000000000000','0'))
     return result
 
 def decode(string):
@@ -48,7 +47,7 @@ def decode(string):
             if count0 != 0:
                 stack.append(count0)
                 count0 = 0
-    temp = stack
+    temp = stack[1:]
 
     temp2 = []
     for i in range(len(temp)):
@@ -66,9 +65,8 @@ def decode(string):
         temp3 = list(map(str, map(lambda x:x//min(temp3), temp3)))
         temp4.append(''.join(temp3))
 
-
+    sum = 0
     for i in range(len(temp4)//8):
-        sum = 0
         odd = code[temp4[i * 8]] + code[temp4[i * 8 + 2]] + code[temp4[i * 8 + 4]] + code[temp4[i * 8 + 6]]
         even = code[temp4[i * 8 + 1]] + code[temp4[i * 8 + 3]] + code[temp4[i * 8 + 5]] + code[temp4[i * 8 + 7]]
         if (odd * 3 + even) % 10 == 0:
@@ -84,7 +82,6 @@ for tc in range(1, T+1):
     hexa = get(arr)
     b = convert(hexa)
 
-    # print(decode(b[0]))
     sum = 0
     for i in b:
         sum += decode(i)
