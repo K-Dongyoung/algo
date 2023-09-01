@@ -12,6 +12,8 @@ for tc in range(1, T+1):
         for j in range(N):
             if i & (1<<j):
                 sum += A[j]
+            if sum > K:
+                break
         if sum == K:
             count += 1
 
