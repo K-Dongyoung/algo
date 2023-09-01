@@ -78,7 +78,6 @@ for tc in range(1, T+1):
     sewer = [list(map(int, input().split())) for _ in range(N)]
     visited = [[0]*M for _ in range(N)]
     time = 1
-    count = 1
 
     bfs(R, C)
     # ans = 0
