@@ -8,8 +8,9 @@ def f():
         for j in range(i+1, len(number)):
             if number[maxi] <= number[j]:
                 maxi = j
-        number[i], number[maxi] = number[maxi], number[i]
-        cnt += 1
+        if maxi != i:
+            number[i], number[maxi] = number[maxi], number[i]
+            cnt += 1
         if cnt == change:
             return
 
@@ -25,6 +26,6 @@ T = int(input())
 for tc in range(1, T+1):
     number, change = input().split()
     change = int(change)
-    number = list(map(int, number))
+    number = list(number)
     f()
-    print(number)
+    print(f'#{tc}', ''.join(number))
