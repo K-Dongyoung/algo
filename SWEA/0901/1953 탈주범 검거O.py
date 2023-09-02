@@ -3,23 +3,35 @@ sys.stdin = open('criminal.txt')
 from collections import deque
 
 def bfs(r, c):
-    global time
+    global count
     queue = deque()
     queue.append((r, c))
     visited[r][c] = 1
     while queue:
-        if time == L:
-            return
         r, c = queue.popleft()
+        if visited[r][c] == L:
+            return
         for i in d[sewer[r][c]]:
             R = r + i[0]
             C = c + i[1]
-            if 0<=R<N and 0<=C<M:
+            if 0<=R<N and 0<=C<M and visited[R][C]==0:
                 if i == (-1, 0) and sewer[R][C] in up:
+                    queue.append((R,C))
+                    visited[R][C] = visited[r][c] + 1
+                    count += 1
                 elif i == (1, 0) and sewer[R][C] in down:
+                    queue.append((R, C))
+                    visited[R][C] = visited[r][c] + 1
+                    count += 1
                 elif i == (0, -1) and sewer[R][C] in left:
+                    queue.append((R, C))
+                    visited[R][C] = visited[r][c] + 1
+                    count += 1
                 elif i == (0, 1) and sewer[R][C] in right:
-        time += 1
+                    queue.append((R, C))
+                    visited[R][C] = visited[r][c] + 1
+                    count += 1
+
 
 d ={
     1:[(-1, 0), (1, 0), (0, -1), (0, 1)],
@@ -40,5 +52,6 @@ for tc in range(1, T+1):
     N, M, R, C, L = map(int, input().split())
     sewer = [list(map(int, input().split())) for _ in range(N)]
     visited = [[0]*M for _ in range(N)]
-    time = 1
+    count = 1
     bfs(R, C)
+    print(f'#{tc} {count}')
