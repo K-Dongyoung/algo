@@ -16,9 +16,6 @@ for tc in range(1, T+1):
         e = len(A)-1
         stack = []
 
-        if b not in A:
-            continue
-
         while s <= e:
             m = (s + e) // 2
 
