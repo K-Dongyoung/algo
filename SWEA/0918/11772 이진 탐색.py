@@ -9,10 +9,16 @@ for tc in range(1, T+1):
     A.sort()
     B = list(map(int, input().split()))
     cnt = 0
-    stack = []
+
+
     for b in B:
         s = 0
         e = len(A)-1
+        stack = []
+
+        if b not in A:
+            continue
+
         while s <= e:
             m = (s + e) // 2
 
@@ -34,4 +40,4 @@ for tc in range(1, T+1):
                 else:
                     stack.append('r')
 
-    print(cnt)
+    print(f'#{tc} {cnt}')
