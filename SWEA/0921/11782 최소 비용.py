@@ -1,20 +1,17 @@
 import sys
 sys.stdin = open('min_cost.txt')
 
-import heapq
-
-
 def dijkstra(r, c):
     D[r][c] = 0
+    Q = [[r, c]]
     for i in range(N):
         for j in range(N):
             min_v = tmp
-            for k in range(N):
-                for l in range(N):
-                    if not visited[k][l] and D[k][l] < min_v:
-                        min_v = D[k][l]
-                        R = k
-                        C = l
+            for ar, ac in Q:
+                if not visited[ar][ac] and D[ar][ac] < min_v:
+                    min_v = D[ar][ac]
+                    R = ar
+                    C = ac
             visited[R][C] = 1
             for w in [(-1, 0), (0, 1), (1, 0), (0, -1)]:
                 ar = R + w[0]
@@ -23,9 +20,11 @@ def dijkstra(r, c):
                     if height[ar][ac] > height[R][C]:
                         if D[ar][ac] > D[R][C] + 1 + height[ar][ac] - height[R][C]:
                             D[ar][ac] = D[R][C] + 1 + height[ar][ac] - height[R][C]
+                            Q.append([ar, ac])
                     else:
                         if D[ar][ac] > D[R][C] + 1:
                             D[ar][ac] = D[R][C] + 1
+                            Q.append([ar, ac])
 
 
 T = int(input())
