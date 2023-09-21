@@ -7,14 +7,14 @@ def dijkstra(r, c):
     for i in range(N):
         for j in range(N):
             min_v = tmp
-            cnt = -1
-            for ar, ac in Q:
-                cnt += 1
-                if not visited[ar][ac] and D[ar][ac] < min_v:
-                    min_v = D[ar][ac]
-                    R = ar
-                    C = ac
-                    idx = cnt
+            idx = 0
+            for i in range(len(Q)):
+                if not visited[Q[i][0]][Q[i][1]] and D[Q[i][0]][Q[i][1]] < min_v:
+                    min_v = D[Q[i][0]][Q[i][1]]
+                    R = Q[i][0]
+                    C = Q[i][1]
+                    idx = i
+
             Q.pop(idx)
             visited[R][C] = 1
             for w in [(-1, 0), (0, 1), (1, 0), (0, -1)]:
