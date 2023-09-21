@@ -2,96 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="412720f4-0e69-440f-a4e2-8826754d6597" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SWEA.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/라이브/practice_recursive.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/라이브/거듭제곱.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/라이브/부분집합_재귀.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/라이브/부분집합_재귀_sum.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/라이브/부분집합_재귀_sum2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/라이브/부분집합의 합_연습문제.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/라이브/순열1swap.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/실습/11881 토너먼트 카드게임.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/실습/11883배열 최소 합.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/실습/card.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/실습/min_sum.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/오프라인/부분집합_가지치기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/오프라인/부분집합_완전.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0816/오프라인/순열.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0817/라이브/QUEUE1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0817/라이브/queue2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0817/라이브/원형큐.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0817/실습/11884 회전.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0817/실습/11885 피자굽기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0817/실습/1225 암호생성기.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0817/실습/code.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0817/실습/pizza.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0817/실습/rotate.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0817/오프라인/선형큐_deq.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0817/오프라인/선형큐_front_rear.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0817/오프라인/선형큐_list.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0818/라이브/bfs 연습.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0818/실습/11886 미로의 거리.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0818/실습/11889 노드의 거리.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0818/실습/1227 미로2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0818/실습/dist.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0818/실습/dist_maze.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0818/실습/maze2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0821/라이브/tree_연습.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0821/실습/11926 subtree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0821/실습/1231 중위순회.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0821/실습/1248 공통조상.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0821/실습/ancestor.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0821/실습/subtree.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0821/실습/중위순회.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0821/오프라인/연습.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0822/heap 삭제 연산 연습.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0822/실습/11927 이진탐색.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0822/실습/11929 이진힙.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0822/실습/11933 노드의 합.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0822/실습/1232 사칙연산.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0822/실습/binary_heap.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0822/실습/binary_search.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0822/실습/cal.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0822/실습/sum_node.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0823/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0823/.idea/0823.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0823/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0823/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0823/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0823/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0823/실습/11750 이진수1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0823/실습/11753 이진수2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0823/실습/1240 단순 2진 암호코드.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0823/실습/binary1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0823/실습/binary2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0823/실습/simple_binary.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0824/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0824/.idea/0824.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0824/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0824/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0824/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0824/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0830/라이브강의/perm1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0830/라이브강의/perm2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0830/라이브강의/recur1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0830/라이브강의/recur2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0830/라이브강의/subset1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0830/오프라인 강의/순열_nPn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0830/오프라인 강의/순열_nPr.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0830/오프라인 강의/순열_nㅠn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0830/오프라인 강의/순열_nㅠr.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0831/라이브 강의/greedy ex1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0831/라이브 강의/ncr1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0831/라이브 강의/ncr2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0831/라이브 강의/subset ex1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0831/라이브 강의/subset ex2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/0831/라이브 강의/subset ex3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +20,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="2Vb17DYpzhoH0T0muyH3LNOEB2B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -116,6 +28,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
   </component>
   <component name="RunManager" selected="Python.1">
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -221,5 +134,17 @@
       <updated>1695089797157</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
