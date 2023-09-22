@@ -17,6 +17,8 @@ def dijkstra(r, c):
 
             Q.pop(idx)
             visited[R][C] = 1
+            if R == N-1 and C == N-1:
+                return
             for w in [(-1, 0), (0, 1), (1, 0), (0, -1)]:
                 ar = R + w[0]
                 ac = C + w[1]
