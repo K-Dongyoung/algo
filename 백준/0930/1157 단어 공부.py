@@ -1,7 +1,8 @@
 string = input()
-arr = [0] * 26
+z = ord('z')-ord('a') + 1
+arr = [0] * z
 for c in string:
-    if c.isupper():
+    if 0 <= ord(c) - ord('A') < z:
         arr[ord(c) - ord('A')] += 1
     else:
         arr[ord(c) - ord('a')] += 1
