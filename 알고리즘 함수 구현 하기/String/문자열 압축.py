@@ -1,0 +1,1 @@
+# Run-length encoding - BMP, 허프만
