@@ -7,13 +7,11 @@ def brute_force(t, p):
 
     answer_list = []
     for i in range(len_t - len_p + 1):
-        flag = True
         for j in range(len_p):
             if p[j] != t[i + j]:
-                flag = False
                 break
-        if flag:
-            answer_list.append(i)
+            if j == len_p - 1:
+                answer_list.append(i)
     return answer_list
 
 
