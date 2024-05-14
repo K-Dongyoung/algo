@@ -1,14 +1,32 @@
 def solution(jobs):
     global last
     answer = 0
-    L = len(jobs)
 
-    jobs.sort()
-
-    now = 0
     start = 0
+    end = 0
+    cnt = 0
+    length = len(jobs)
 
-    return answer
+    while cnt < length:
+
+        for job in jobs:
+            if len(job) == 2 and start <= job[0] <= end:
+                enq(job)
+                job.append(1)
+
+        if last >= 1:
+            current = deq()
+            request = current[0]
+            start = end
+            end = start + current[1]
+            answer += end - request
+            cnt += 1
+
+        else:
+            end += 1
+            start = end
+
+    return answer / length
 
 
 def enq(v):
@@ -43,5 +61,5 @@ def deq():
 
 heap = [0] * 501
 last = 0
-j = [[0, 5], [1, 2], [5, 5], [6, 2], [7, 1]]
+j = [[0, 3], [1, 9], [2, 6]]
 print(solution(j))
