@@ -26,7 +26,7 @@ def solution(jobs):
             end += 1
             start = end
 
-    return answer / length
+    return answer // length
 
 
 def enq(v):
