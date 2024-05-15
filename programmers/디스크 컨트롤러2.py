@@ -4,18 +4,23 @@ def solution(jobs):
     global last
     answer = 0
 
+    jobs.sort()
+
     Q = []
-    start = 0
+    start = -1
     end = 0
     cnt = 0
     length = len(jobs)
+    j = 0
 
     while cnt < length:
 
-        for job in jobs:
-            if len(job) == 2 and start <= job[0] <= end:
-                heapq.heappush(Q, (job[1], job[0]))
-                job.append(1)
+        for i in range(j, length):
+            if start < jobs[i][0] <= end:
+                heapq.heappush(Q, (jobs[i][1], jobs[i][0]))
+            else:
+                j = i
+                break
 
         if Q:
             current = heapq.heappop(Q)

@@ -1,18 +1,21 @@
 def solution(jobs):
     global last
     answer = 0
-
-    start = 0
+    jobs.sort()
+    start = -1
     end = 0
     cnt = 0
     length = len(jobs)
+    j = 0
 
     while cnt < length:
 
-        for job in jobs:
-            if len(job) == 2 and start <= job[0] <= end:
-                enq(job)
-                job.append(1)
+        for i in range(j, length):
+            if start < jobs[i][0] <= end:
+                enq(jobs[i])
+            else:
+                j = i
+                break
 
         if last >= 1:
             current = deq()
@@ -24,7 +27,6 @@ def solution(jobs):
 
         else:
             end += 1
-            start = end
 
     return answer // length
 
