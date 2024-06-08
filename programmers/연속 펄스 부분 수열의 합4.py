@@ -1,3 +1,4 @@
+# 블로그 참고
 def solution(sequence):
     sequence_len = len(sequence)
     max_sum = -100000 * sequence_len
