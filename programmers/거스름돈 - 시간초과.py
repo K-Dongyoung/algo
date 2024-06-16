@@ -1,10 +1,10 @@
 def solution(n, money):
     global answer
-    p(n, money, 0, [])
+    p(n, money, 0)
     return answer
 
 
-def p(n, money, total, change_list):
+def p(n, money, total):
     global answer
     if n == total:
         answer += 1
@@ -13,7 +13,7 @@ def p(n, money, total, change_list):
         return
     else:
         for i in range(len(money)):
-            p(n, money[i:], total + money[i], change_list + [money[i]])
+            p(n, money[i:], total + money[i])
 
 
 answer = 0
