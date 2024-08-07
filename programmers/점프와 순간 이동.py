@@ -1,12 +1,6 @@
 # 다른 사람 코드 참고 해서 변경
 def solution(n):
-    ans = 0
-
-    while n > 0:
-        ans += n % 2
-        n //= 2
-
-    return ans
+    return bin(n).count('1')
 
 
 print(solution(5))
