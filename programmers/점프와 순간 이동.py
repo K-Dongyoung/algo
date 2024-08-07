@@ -1,10 +1,9 @@
+# 다른 사람 코드 참고 해서 변경
 def solution(n):
     ans = 0
 
     while n > 0:
-        if n % 2 == 1:
-            n -= 1
-            ans += 1
+        ans += n % 2
         n //= 2
 
     return ans
