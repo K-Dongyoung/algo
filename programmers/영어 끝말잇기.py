@@ -3,8 +3,7 @@ def solution(n, words):
     if i == -1:
         return [0, 0]
     else:
-        return [(i + 1) % n if (i + 1) % n != 0 else n,
-                (i + 1) // n + 1 if (i + 1) % n != 0 else (i + 1) // n]
+        return [i % n + 1, i // n + 1]
 
 
 def find_index(words):
