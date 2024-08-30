@@ -2,8 +2,7 @@ def solution(clothes): # 시간 초과
     d = {}
     for c in clothes:
         d[c[1]] = d.setdefault(c[1], 0) + 1
-    len_d = len(d)
-    return f(list(d.values()), 1, 0, len_d) - 1
+    return f(list(d.values()), 1, 0, len(d)) - 1
 
 def f(l, a, s, e):
     if s < e:
